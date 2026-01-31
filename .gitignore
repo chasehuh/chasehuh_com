@@ -41,9 +41,5 @@ yarn-error.log*
 next-env.d.ts
 reference/
 
-# wrangler
-.wrangler/
-.dev.vars
-
 # generated files
 /app/blog-data.json

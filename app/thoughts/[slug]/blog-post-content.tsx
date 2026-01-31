@@ -1,32 +1,19 @@
-import { json, type LoaderFunctionArgs } from "@remix-run/cloudflare";
-import { useLoaderData, Link } from "@remix-run/react";
+"use client";
+
 import { useState } from "react";
-import { getPostBySlug } from "~/lib/markdown.server";
+import Link from "next/link";
+import type { Post } from "~/lib/markdown";
+import { GiscusComments } from "~/components/giscus-comments";
 
-export async function loader({ params }: LoaderFunctionArgs) {
-  const { slug } = params;
-  if (!slug) {
-    throw new Response("Not Found", { status: 404 });
-  }
-  
-  const post = await getPostBySlug(slug);
-  if (!post) {
-    throw new Response("Not Found", { status: 404 });
-  }
-  
-  return json({ post });
-}
-
-export default function BlogPost() {
-  const { post } = useLoaderData<typeof loader>();
+export function BlogPostContent({ post }: { post: Post }) {
   const hasKorean = post.contentKo && post.htmlContentKo;
-  const [lang, setLang] = useState<'en' | 'ko'>(hasKorean ? 'ko' : 'en');
+  const [lang, setLang] = useState<'en' | 'ko'>('en');
 
   return (
     <article>
       <div className="mb-8 flex justify-between items-center">
-        <Link to="/blog" className="underline hover:no-underline text-[15px]">
-          ← Writing
+        <Link href="/thoughts" className="underline hover:no-underline text-[15px]">
+          ← Thoughts
         </Link>
         {hasKorean && (
           <div className="text-[15px]">
@@ -55,12 +42,15 @@ export default function BlogPost() {
         {post.author && <> — {post.author}</>}
       </p>
 
-      <div 
+      <div
+        lang={lang}
         className="prose text-[15px] leading-[1.8]"
-        dangerouslySetInnerHTML={{ 
-          __html: lang === 'ko' && post.htmlContentKo ? post.htmlContentKo : post.htmlContent || '' 
+        dangerouslySetInnerHTML={{
+          __html: lang === 'ko' && post.htmlContentKo ? post.htmlContentKo : post.htmlContent || ''
         }}
       />
+
+      <GiscusComments />
     </article>
   );
 }
