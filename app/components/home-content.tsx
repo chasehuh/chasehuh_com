@@ -320,7 +320,7 @@ export function HomeContent({
                 >
                   {post.title}
                 </Link>
-                <span className="text-gray-500 ml-2">— {post.date}</span>
+                <span className="ml-2" style={{ color: 'var(--muted-foreground)' }}>— {post.date}</span>
               </div>
             ))}
             <div className="text-[15px]" style={{ marginTop: "16px" }}>

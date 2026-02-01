@@ -37,7 +37,7 @@ export function BlogPostContent({ post }: { post: Post }) {
       <h1 className="text-2xl font-semibold mb-2">
         {post.title}
       </h1>
-      <p className="text-[15px] text-gray-500 mb-8">
+      <p className="text-[15px] mb-8" style={{ color: 'var(--muted-foreground)' }}>
         {post.date}
         {post.author && <> — {post.author}</>}
       </p>

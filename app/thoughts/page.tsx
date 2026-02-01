@@ -20,7 +20,7 @@ export default function BlogIndex() {
             <Link href={`/thoughts/${post.slug}`} className="underline hover:no-underline">
               {post.title}
             </Link>
-            <span className="text-gray-500 ml-2">— {post.date}</span>
+            <span className="ml-2" style={{ color: 'var(--muted-foreground)' }}>— {post.date}</span>
           </li>
         ))}
       </ul>
