@@ -199,7 +199,7 @@ export function HomeContent({
       <h1 className="text-2xl font-semibold mb-8">Chaewon (Chase) Huh</h1>
 
       <p className="text-[15px] leading-[1.8] mb-8">
-        20yo dreamer. Looking for smart, driven young talents
+        20yo founder. Looking for smart, driven young talents
       </p>
 
       <p className="text-[15px]">
