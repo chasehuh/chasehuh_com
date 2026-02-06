@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Chaewon (Chase) Huh",
-  description: "A minimal portfolio showcasing my work and thoughts",
+  description: "building sume.so",
   icons: {
     icon: "data:,",
   },
