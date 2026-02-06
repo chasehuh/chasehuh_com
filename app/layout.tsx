@@ -26,7 +26,7 @@ export default function RootLayout({
           <div style={{
             width: '100%',
             maxWidth: '48rem',
-            paddingTop: '128px',
+            paddingTop: '48px',
             paddingBottom: '80px',
             paddingLeft: '32px',
             paddingRight: '32px'
