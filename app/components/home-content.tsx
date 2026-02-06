@@ -199,7 +199,12 @@ export function HomeContent({
       <h1 className="text-2xl font-semibold mb-8">Chaewon (Chase) Huh</h1>
 
       <p className="text-[15px] leading-[1.8] mb-8">
-        20yo founder. Looking for smart, driven young talents
+        20 y/o founder building{" "}
+        <a href="https://sume.so" className="underline hover:no-underline">
+          sume.so
+        </a>
+        <br />
+        Looking for cracked (young, smart, optimistic) talents
       </p>
 
       <p className="text-[15px]">
@@ -207,14 +212,21 @@ export function HomeContent({
           href="mailto:chase@sumelabs.com"
           className="underline hover:no-underline"
         >
-          chase@sumelabs.com
+          email
         </a>
-        {" / "}
+        {" | "}
         <a
-          href="https://cal.com/chase-huh-hg4a7d/30min"
+          href="https://github.com/chaewon-huh"
           className="underline hover:no-underline"
         >
-          30 min calls
+          github
+        </a>
+        {" | "}
+        <a
+          href="https://x.com/chaewonhuh_me"
+          className="underline hover:no-underline"
+        >
+          x.com
         </a>
       </p>
 
