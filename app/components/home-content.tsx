@@ -34,7 +34,16 @@ export function HomeContent({
             >
               sume.so
             </a>
-            : AI personal tutor live on Zoom
+            : Giving face to AI
+          </li>
+          <li>
+            Backed by{" "}
+            <a
+              href="https://f.inc"
+              className="underline hover:no-underline"
+            >
+              Founders Inc.
+            </a>
           </li>
         </ul>
       ),
