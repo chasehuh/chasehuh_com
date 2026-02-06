@@ -4,6 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Chaewon (Chase) Huh",
   description: "building sume.so",
+  openGraph: {
+    title: "Chaewon (Chase) Huh",
+    description: "building sume.so",
+    url: "https://www.chasehuh.com",
+  },
   icons: {
     icon: "data:,",
   },
