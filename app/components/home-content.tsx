@@ -203,6 +203,10 @@ export function HomeContent({
         <a href="https://sume.so" className="underline hover:no-underline">
           sume.so
         </a>
+        {" / "}
+        <a href="https://clawra.dev" className="underline hover:no-underline">
+          clawra.dev
+        </a>
         <br />
         Looking for cracked (young, smart, optimistic) talents
       </p>
