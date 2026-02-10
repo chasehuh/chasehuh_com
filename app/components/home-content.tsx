@@ -29,10 +29,10 @@ export function HomeContent({
         <ul className="list-disc list-outside ml-5 space-y-2">
           <li>
             <a
-              href="https://sume.so"
+              href="https://sumelabs.com"
               className="underline hover:no-underline"
             >
-              sume.so
+              sumelabs.com
             </a>
             : Giving face to AI
           </li>
@@ -200,12 +200,8 @@ export function HomeContent({
 
       <p className="text-[15px] leading-[1.8] mb-8">
         20 y/o founder building{" "}
-        <a href="https://sume.so" className="underline hover:no-underline">
-          sume.so
-        </a>
-        {" / "}
-        <a href="https://clawra.dev" className="underline hover:no-underline">
-          clawra.dev
+        <a href="https://sumelabs.com" className="underline hover:no-underline">
+          sumelabs.com
         </a>
         <br />
         Looking for cracked (young, smart, optimistic) talents
