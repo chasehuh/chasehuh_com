@@ -258,15 +258,15 @@ export function HomeContent({
           </h2>
           <div className="space-y-4">
             <div className="text-[15px] leading-[1.8]">
-              • Kyeongbuk High School (22.03 - 24.02)
-            </div>
-            <div className="text-[15px] leading-[1.8]">
               • BS, POSTECH (24.03 - Present)
               <div style={{ marginLeft: "40px", marginTop: "12px" }}>
                 <ul className="list-disc list-outside ml-5 space-y-2">
                   <li>on leave after semester 1</li>
                 </ul>
               </div>
+            </div>
+            <div className="text-[15px] leading-[1.8]">
+              • Kyeongbuk High School (22.03 - 24.02)
             </div>
           </div>
         </div>
