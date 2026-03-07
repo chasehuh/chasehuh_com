@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 interface ExpandableItem {
   id: string;
@@ -10,6 +10,7 @@ interface ExpandableItem {
 
 export function ExpandableList({ items }: { items: ExpandableItem[] }) {
   const [expandedItems, setExpandedItems] = useState<string[]>([]);
+  const expandedItemSet = useMemo(() => new Set(expandedItems), [expandedItems]);
 
   const toggleExpand = (id: string) => {
     setExpandedItems((prev) =>
@@ -19,40 +20,39 @@ export function ExpandableList({ items }: { items: ExpandableItem[] }) {
 
   return (
     <div className="space-y-4">
-      {items.map((item) => (
-        <div key={item.id}>
-          <button
-            onClick={() => toggleExpand(item.id)}
-            className="text-left w-full text-[15px] leading-[1.8] hover:opacity-70 transition-opacity"
-            style={{
-              cursor: "pointer",
-              background: "none",
-              border: "none",
-              padding: 0,
-              font: "inherit",
-              color: "inherit",
-            }}
-          >
-            <span
-              className={
-                expandedItems.includes(item.id)
-                  ? "font-semibold underline"
-                  : ""
-              }
+      {items.map((item) => {
+        const isExpanded = expandedItemSet.has(item.id);
+
+        return (
+          <div key={item.id}>
+            <button
+              type="button"
+              onClick={() => toggleExpand(item.id)}
+              className="text-left w-full text-[15px] leading-[1.8] hover:opacity-70 transition-opacity"
+              style={{
+                cursor: "pointer",
+                background: "none",
+                border: "none",
+                padding: 0,
+                font: "inherit",
+                color: "inherit",
+              }}
             >
-              {item.label}
-            </span>
-          </button>
-          {expandedItems.includes(item.id) && (
-            <div
-              style={{ marginLeft: "40px", marginTop: "12px" }}
-              className="text-[15px] leading-[1.8]"
-            >
-              {item.children}
-            </div>
-          )}
-        </div>
-      ))}
+              <span className={isExpanded ? "font-semibold underline" : ""}>
+                {item.label}
+              </span>
+            </button>
+            {isExpanded && (
+              <div
+                style={{ marginLeft: "40px", marginTop: "12px" }}
+                className="text-[15px] leading-[1.8]"
+              >
+                {item.children}
+              </div>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }
