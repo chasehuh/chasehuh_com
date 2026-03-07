@@ -11,6 +11,7 @@ export default function Index() {
 
   const logs = getAllLogs();
   const recentLogs = logs.slice(0, 3).map((l) => ({
+    slug: l.slug,
     date: l.date,
     title: l.title,
   }));

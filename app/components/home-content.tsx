@@ -9,6 +9,7 @@ interface PostSummary {
 }
 
 interface LogSummary {
+  slug: string;
   date: string;
   title: string;
 }
@@ -130,10 +131,10 @@ export function HomeContent({
           </h2>
           <div className="space-y-2">
             {recentLogs.map((log) => (
-              <div key={log.date} className="text-[15px]">
+              <div key={log.slug} className="text-[15px]">
                 •{" "}
                 <Link
-                  href={`/logs/${log.date.replace(/-/g, "_")}`}
+                  href={`/logs/${log.slug}`}
                   className="underline hover:no-underline"
                 >
                   {log.date}
