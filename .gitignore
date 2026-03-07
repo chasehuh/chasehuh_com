@@ -43,3 +43,11 @@ reference/
 
 # generated files
 /app/blog-data.json
+# OpenNext
+.open-next
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
