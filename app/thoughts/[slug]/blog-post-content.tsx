@@ -1,13 +1,13 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 import type { Post } from "~/lib/markdown";
 import { GiscusComments } from "~/components/giscus-comments";
+import { PostLanguageToggle } from "./post-language-toggle";
 
 export function BlogPostContent({ post }: { post: Post }) {
-  const hasKorean = post.contentKo && post.htmlContentKo;
-  const [lang, setLang] = useState<'en' | 'ko'>('en');
+  const hasKorean = Boolean(post.contentKo && post.htmlContentKo);
+  const englishContentId = `post-content-${post.slug}-en`;
+  const koreanContentId = `post-content-${post.slug}-ko`;
+  const contentClassName = "prose text-[15px] leading-[1.8]";
 
   return (
     <article>
@@ -16,21 +16,10 @@ export function BlogPostContent({ post }: { post: Post }) {
           ← Thoughts
         </Link>
         {hasKorean && (
-          <div className="text-[15px]">
-            <button
-              onClick={() => setLang('en')}
-              className={`${lang === 'en' ? 'font-semibold' : ''} hover:opacity-70`}
-            >
-              EN
-            </button>
-            <span className="mx-2">|</span>
-            <button
-              onClick={() => setLang('ko')}
-              className={`${lang === 'ko' ? 'font-semibold' : ''} hover:opacity-70`}
-            >
-              KR
-            </button>
-          </div>
+          <PostLanguageToggle
+            englishContentId={englishContentId}
+            koreanContentId={koreanContentId}
+          />
         )}
       </div>
 
@@ -43,12 +32,20 @@ export function BlogPostContent({ post }: { post: Post }) {
       </p>
 
       <div
-        lang={lang}
-        className="prose text-[15px] leading-[1.8]"
-        dangerouslySetInnerHTML={{
-          __html: lang === 'ko' && post.htmlContentKo ? post.htmlContentKo : post.htmlContent || ''
-        }}
+        id={englishContentId}
+        lang="en"
+        className={contentClassName}
+        dangerouslySetInnerHTML={{ __html: post.htmlContent || "" }}
       />
+      {hasKorean && (
+        <div
+          id={koreanContentId}
+          lang="ko"
+          hidden
+          className={contentClassName}
+          dangerouslySetInnerHTML={{ __html: post.htmlContentKo || "" }}
+        />
+      )}
 
       <GiscusComments />
     </article>
