@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://chaewon.me"),
+  metadataBase: new URL("https://www.chasehuh.com"),
   title: "Chaewon (Chase) Huh",
   description: "building sumelabs.com",
   alternates: {

@@ -25,7 +25,7 @@ export default function OpenGraphImage() {
         }}
       >
         <div style={{ display: "flex", fontSize: 28, letterSpacing: 6 }}>
-          CHAEWON.ME
+          WWW.CHASEHUH.COM
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
           <div style={{ display: "flex", fontSize: 78, fontWeight: 700 }}>
@@ -44,7 +44,7 @@ export default function OpenGraphImage() {
           }}
         >
           <div style={{ display: "flex" }}>personal site</div>
-          <div style={{ display: "flex" }}>chaewon.me</div>
+          <div style={{ display: "flex" }}>www.chasehuh.com</div>
         </div>
       </div>
     ),
