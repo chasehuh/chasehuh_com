@@ -3,6 +3,20 @@ import { siteUrl } from "~/lib/site";
 
 export const siteName = "Chaewon (Chase) Huh";
 export const siteDescription = "building sumelabs.com";
+export const siteAuthor = "Chaewon Huh";
+export const siteLocale = "en_US";
+export const xHandle = "@chaewonhuh_me";
+export const defaultOgImage = "/opengraph-image";
+export const siteKeywords = [
+  "Chaewon Huh",
+  "Chase Huh",
+  "founder",
+  "startup",
+  "sumelabs",
+  "personal site",
+  "blog",
+  "thoughts",
+];
 
 function joinTitle(title: string) {
   return `${title} | ${siteName}`;
@@ -17,11 +31,13 @@ export function buildMetadata({
   description,
   path = "/",
   type = "website",
+  publishedTime,
 }: {
   title: string;
   description: string;
   path?: string;
   type?: "article" | "website";
+  publishedTime?: string;
 }): Metadata {
   const url = buildAbsoluteUrl(path);
 
@@ -36,10 +52,24 @@ export function buildMetadata({
       description,
       url,
       type,
+      locale: siteLocale,
+      siteName,
+      images: [
+        {
+          url: defaultOgImage,
+          width: 1200,
+          height: 630,
+          alt: siteName,
+        },
+      ],
+      ...(publishedTime ? { publishedTime } : {}),
     },
     twitter: {
+      card: "summary_large_image",
       title: joinTitle(title),
       description,
+      creator: xHandle,
+      images: [defaultOgImage],
     },
   };
 }
@@ -72,4 +102,8 @@ export function pickDescription(input: string, fallback: string) {
   return normalized.length > 160
     ? `${normalized.slice(0, 157).trimEnd()}...`
     : normalized;
+}
+
+export function jsonLd(data: object) {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
 }

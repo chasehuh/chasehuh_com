@@ -1,12 +1,26 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { siteDescription, siteName } from "~/lib/metadata";
+import {
+  defaultOgImage,
+  siteAuthor,
+  siteDescription,
+  siteKeywords,
+  siteLocale,
+  siteName,
+  xHandle,
+} from "~/lib/metadata";
 import { siteUrl } from "~/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: siteName,
   description: siteDescription,
+  keywords: siteKeywords,
+  authors: [{ name: siteAuthor, url: siteUrl }],
+  creator: siteAuthor,
+  publisher: siteAuthor,
+  category: "technology",
+  referrer: "origin-when-cross-origin",
   alternates: {
     canonical: "/",
   },
@@ -15,9 +29,10 @@ export const metadata: Metadata = {
     description: siteDescription,
     url: "/",
     siteName,
+    locale: siteLocale,
     images: [
       {
-        url: "/opengraph-image",
+        url: defaultOgImage,
         width: 1200,
         height: 630,
         alt: siteName,
@@ -29,11 +44,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteName,
     description: siteDescription,
-    images: ["/opengraph-image"],
+    creator: xHandle,
+    images: [defaultOgImage],
   },
   icons: {
     icon: "/icon.png",
   },
+  manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({
