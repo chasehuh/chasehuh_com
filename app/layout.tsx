@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { siteUrl } from "~/lib/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.chasehuh.com"),
+  metadataBase: new URL(siteUrl),
   title: "Chaewon (Chase) Huh",
   description: "building sumelabs.com",
   alternates: {
