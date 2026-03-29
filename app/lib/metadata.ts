@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
+import { siteUrl } from "~/lib/site";
 
 export const siteName = "Chaewon (Chase) Huh";
 export const siteDescription = "building sumelabs.com";
-export const baseUrl = "https://www.chasehuh.com";
 
 function joinTitle(title: string) {
   return `${title} | ${siteName}`;
 }
 
 function buildAbsoluteUrl(path: string) {
-  return new URL(path, baseUrl).toString();
+  return new URL(path, siteUrl).toString();
 }
 
 export function buildMetadata({

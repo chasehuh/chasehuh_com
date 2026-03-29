@@ -1,18 +1,38 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { baseUrl, siteDescription, siteName } from "~/lib/metadata";
+import { siteDescription, siteName } from "~/lib/metadata";
+import { siteUrl } from "~/lib/site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: siteName,
   description: siteDescription,
-  metadataBase: new URL(baseUrl),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: siteName,
     description: siteDescription,
-    url: baseUrl,
+    url: "/",
+    siteName,
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: siteName,
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description: siteDescription,
+    images: ["/opengraph-image"],
   },
   icons: {
-    icon: "data:,",
+    icon: "/icon.png",
   },
 };
 
