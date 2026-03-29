@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllLogs } from "~/lib/markdown";
+import { buildMetadata } from "~/lib/metadata";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Logs",
+  description: "Daily logs from Chaewon Huh covering startup progress, decisions, and momentum.",
+  path: "/logs",
+});
 
 export default function LogsIndex() {
   const logs = getAllLogs();

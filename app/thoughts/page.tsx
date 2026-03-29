@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "~/lib/markdown";
+import { buildMetadata } from "~/lib/metadata";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Thoughts",
+  description: "Essays and longer-form writing from Chaewon Huh on life, startups, and ideas.",
+  path: "/thoughts",
+});
 
 export default function BlogIndex() {
   const posts = getAllPosts();

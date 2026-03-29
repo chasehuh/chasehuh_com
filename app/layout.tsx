@@ -1,33 +1,34 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { siteDescription, siteName } from "~/lib/metadata";
 import { siteUrl } from "~/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Chaewon (Chase) Huh",
-  description: "building sumelabs.com",
+  title: siteName,
+  description: siteDescription,
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Chaewon (Chase) Huh",
-    description: "building sumelabs.com",
+    title: siteName,
+    description: siteDescription,
     url: "/",
-    siteName: "Chaewon (Chase) Huh",
+    siteName,
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Chaewon (Chase) Huh",
+        alt: siteName,
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chaewon (Chase) Huh",
-    description: "building sumelabs.com",
+    title: siteName,
+    description: siteDescription,
     images: ["/opengraph-image"],
   },
   icons: {
