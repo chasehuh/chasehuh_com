@@ -43,7 +43,7 @@ export function HomeContent({
         </a>
         {" | "}
         <a
-          href="https://github.com/chaewon-huh"
+          href="https://github.com/chasehuh"
           className="underline hover:no-underline"
         >
           github

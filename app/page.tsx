@@ -26,7 +26,7 @@ export default function Index() {
     url: siteUrl,
     description: siteDescription,
     sameAs: [
-      "https://github.com/chaewon-huh",
+      "https://github.com/chasehuh",
       "https://x.com/chaewonhuh_me",
       "https://sumelabs.com",
     ],
@@ -54,7 +54,7 @@ export default function Index() {
       "@type": "Person",
       name: siteName,
       sameAs: [
-        "https://github.com/chaewon-huh",
+        "https://github.com/chasehuh",
         `https://x.com/${xHandle.replace("@", "")}`,
       ],
     },
