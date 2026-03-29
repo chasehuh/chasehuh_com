@@ -87,7 +87,7 @@ export function HomeContent({
             • BS in Computer Science, POSTECH (24.03 - 24.07)
             <div style={{ marginLeft: "40px", marginTop: "12px" }}>
               <ul className="list-disc list-outside ml-5 space-y-2">
-                <li>withdrew after the first semester</li>
+                <li>dropped out after the first semester</li>
               </ul>
             </div>
           </div>
