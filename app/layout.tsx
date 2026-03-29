@@ -2,15 +2,35 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://chaewon.me"),
   title: "Chaewon (Chase) Huh",
   description: "building sumelabs.com",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Chaewon (Chase) Huh",
     description: "building sumelabs.com",
-    url: "https://www.chasehuh.com",
+    url: "/",
+    siteName: "Chaewon (Chase) Huh",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Chaewon (Chase) Huh",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chaewon (Chase) Huh",
+    description: "building sumelabs.com",
+    images: ["/opengraph-image"],
   },
   icons: {
-    icon: "data:,",
+    icon: "/icon.png",
   },
 };
 
