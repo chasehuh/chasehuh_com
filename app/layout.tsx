@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { siteUrl } from "~/lib/site";
 
 export const metadata: Metadata = {
   title: "Chaewon (Chase) Huh",
   description: "building sumelabs.com",
+  metadataBase: new URL(siteUrl),
   openGraph: {
     title: "Chaewon (Chase) Huh",
     description: "building sumelabs.com",
-    url: "https://www.chasehuh.com",
+    url: siteUrl,
   },
   icons: {
     icon: "data:,",
