@@ -74,24 +74,6 @@ export function buildMetadata({
   };
 }
 
-export function buildNoIndexMetadata({
-  title,
-  description,
-  path,
-}: {
-  title: string;
-  description: string;
-  path: string;
-}): Metadata {
-  return {
-    ...buildMetadata({ title, description, path, type: "article" }),
-    robots: {
-      index: false,
-      follow: true,
-    },
-  };
-}
-
 export function pickDescription(input: string, fallback: string) {
   const normalized = input.replace(/\s+/g, " ").trim();
 
