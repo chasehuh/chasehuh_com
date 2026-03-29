@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { AwardsList } from "~/components/awards-list";
+import { buildMetadata } from "~/lib/metadata";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Awards",
+  description: "Awards, honors, and recognitions received by Chaewon Huh.",
+  path: "/awards",
+});
 
 export default function AwardsPage() {
   return (
