@@ -14,14 +14,10 @@ const experienceItems = [
   },
   {
     id: "stealth",
-    label: "• Stealth Startup (25.04 - 25.08)",
+    label: "• Founder at Canny (25.04 - 25.08)",
     children: (
       <ul className="list-disc list-outside ml-5 space-y-2">
-        <li>Grinding away on various projects.</li>
-        <li style={{ marginTop: "8px" }}>
-          Aug: B2C Viral Product - 10M+ Reels views in Korea, modest
-          monetization despite viral traction
-        </li>
+        <li>Made Realistic AI Avatar shortform generator, reached 10M+ Reels views with modest monetization.</li>
       </ul>
     ),
   },
