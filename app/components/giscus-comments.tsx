@@ -6,7 +6,7 @@ export function GiscusComments() {
   return (
     <div style={{ marginTop: "64px" }}>
       <Giscus
-        repo="chaewon-huh/chaewon_me"
+        repo="chasehuh/chasehuh_com"
         repoId="R_kgDOPPXHvg"
         category="General"
         categoryId="DIC_kwDOPPXHvs4C1sjT"

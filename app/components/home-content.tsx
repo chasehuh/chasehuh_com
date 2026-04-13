@@ -25,28 +25,29 @@ export function HomeContent({
     <div>
       <h1 className="text-2xl font-semibold mb-8">Chaewon (Chase) Huh</h1>
 
-      <p className="text-[15px] leading-[1.8] mb-8">
+      <p className="text-[15px] leading-[1.8]">
         cofounder at{" "}
         <a href="https://sumelabs.com" className="underline hover:no-underline">
           sume
         </a>
-        <br />
-        Looking for cracked (young, smart, optimistic) talents
       </p>
 
-      <p className="text-[15px] flex flex-wrap gap-4">
+      <p className="text-[15px] leading-[1.8] mb-8">
+        contact me via{" "}
         <a
           href="mailto:chase@sumelabs.com"
           className="underline hover:no-underline"
         >
           email
-        </a>
+        </a>{" "}
+        <span>, </span>
         <a
           href="https://github.com/chasehuh"
           className="underline hover:no-underline"
         >
           github
-        </a>
+        </a>{" "}
+        <span>, </span>
         <a
           href="https://x.com/chaewonhuh_me"
           className="underline hover:no-underline"
@@ -57,30 +58,12 @@ export function HomeContent({
 
       <div style={{ marginTop: "48px" }}>
         <div style={{ marginBottom: "64px" }}>
-          <h2
-            style={{
-              fontSize: "1.25rem",
-              fontWeight: "600",
-              marginBottom: "16px",
-              marginTop: "32px",
-            }}
-          >
-            Experience
-          </h2>
+          <p className="text-[15px] leading-[1.8] mb-4">before sume, i worked as</p>
           <ExperienceList />
         </div>
 
         <div style={{ marginBottom: "64px" }}>
-          <h2
-            style={{
-              fontSize: "1.25rem",
-              fontWeight: "600",
-              marginBottom: "16px",
-              marginTop: "32px",
-            }}
-          >
-            Education
-          </h2>
+          <p className="text-[15px] leading-[1.8] mb-4">I studied at,</p>
           <div className="text-[15px] leading-[1.8]">
             • BS, POSTECH (24.03 - 24.07)
             <div style={{ marginLeft: "40px", marginTop: "12px" }}>
@@ -92,16 +75,7 @@ export function HomeContent({
         </div>
 
         <div style={{ marginBottom: "64px" }}>
-          <h2
-            style={{
-              fontSize: "1.25rem",
-              fontWeight: "600",
-              marginBottom: "16px",
-              marginTop: "32px",
-            }}
-          >
-            Awards
-          </h2>
+          <p className="text-[15px] leading-[1.8] mb-4">I won,</p>
           <AwardsList limit={3} />
           <div className="text-[15px]" style={{ marginTop: "16px" }}>
             •{" "}
@@ -112,16 +86,7 @@ export function HomeContent({
         </div>
 
         <div style={{ marginBottom: "64px" }}>
-          <h2
-            style={{
-              fontSize: "1.25rem",
-              fontWeight: "600",
-              marginBottom: "16px",
-              marginTop: "32px",
-            }}
-          >
-            Logs
-          </h2>
+          <p className="text-[15px] leading-[1.8] mb-4">raw thoughts,</p>
           <div className="space-y-2">
             {recentLogs.map((log) => (
               <div key={log.slug} className="text-[15px]">
@@ -144,16 +109,7 @@ export function HomeContent({
         </div>
 
         <div style={{ marginBottom: "64px" }}>
-          <h2
-            style={{
-              fontSize: "1.25rem",
-              fontWeight: "600",
-              marginBottom: "16px",
-              marginTop: "32px",
-            }}
-          >
-            Thoughts
-          </h2>
+          <p className="text-[15px] leading-[1.8] mb-4">synthesized thoughts,</p>
           <div className="space-y-2">
             {recentPosts.map((post) => (
               <div key={post.slug} className="text-[15px]">

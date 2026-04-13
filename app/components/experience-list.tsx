@@ -4,32 +4,6 @@ import { ExpandableList } from "~/components/expandable-section";
 
 const experienceItems = [
   {
-    id: "cofounder",
-    label: <span>• <strong>Co-founder at Sume</strong> (26.01 - )</span>,
-    children: (
-      <ul className="list-disc list-outside ml-5 space-y-2">
-        <li>
-          <a
-            href="https://sumelabs.com"
-            className="underline hover:no-underline"
-          >
-            sumelabs.com
-          </a>
-          : Giving face to AI
-        </li>
-        <li>
-          Backed by{" "}
-          <a
-            href="https://f.inc"
-            className="underline hover:no-underline"
-          >
-            Founders Inc.
-          </a>
-        </li>
-      </ul>
-    ),
-  },
-  {
     id: "hir",
     label: "• HIR (Hacker in Residence) at Bass Ventures (25.09 - 25.12)",
     children: (
