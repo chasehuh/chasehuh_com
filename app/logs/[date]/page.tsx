@@ -41,6 +41,7 @@ export async function generateMetadata({
     path: `/logs/${log.slug}`,
     type: "article",
     publishedTime: log.date,
+    modifiedTime: log.updatedAt ?? log.date,
   });
 }
 
@@ -67,7 +68,7 @@ export default async function LogPost({
     headline: `Log: ${log.date}`,
     description,
     datePublished: log.date,
-    dateModified: log.date,
+    dateModified: log.updatedAt ?? log.date,
     author: {
       "@type": "Person",
       name: siteAuthor,

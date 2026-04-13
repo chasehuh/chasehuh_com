@@ -17,6 +17,7 @@ export interface LogSummary {
   slug: string;
   title: string;
   date: string;
+  updatedAt?: string;
 }
 
 export interface Log extends LogSummary {

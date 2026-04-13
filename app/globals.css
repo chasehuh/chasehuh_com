@@ -132,6 +132,23 @@ ul {
   margin: 2rem 0;
 }
 
+.prose details {
+  margin: 1.5rem 0;
+}
+
+.prose summary {
+  cursor: pointer;
+  color: var(--muted-foreground);
+}
+
+.prose details img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);

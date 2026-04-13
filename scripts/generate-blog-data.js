@@ -2,13 +2,27 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
-import html from 'remark-html';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import rehypeRaw from 'rehype-raw';
+import rehypeStringify from 'rehype-stringify';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const postsDirectory = path.join(__dirname, '../content/blog');
 const logsDirectory = path.join(__dirname, '../content/logs');
 const outputPath = path.join(__dirname, '../app/blog-data.json');
+
+async function renderMarkdown(content) {
+  const processedContent = await remark()
+    .use(remarkParse)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeRaw)
+    .use(rehypeStringify)
+    .process(content);
+
+  return processedContent.toString();
+}
 
 async function processPost(slug) {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
@@ -25,17 +39,11 @@ async function processPost(slug) {
     contentKo = parts[1]?.trim() || '';
   }
 
-  const processedContent = await remark()
-    .use(html)
-    .process(contentEn);
-  const htmlContent = processedContent.toString();
+  const htmlContent = await renderMarkdown(contentEn);
 
   let htmlContentKo;
   if (contentKo) {
-    const processedContentKo = await remark()
-      .use(html)
-      .process(contentKo);
-    htmlContentKo = processedContentKo.toString();
+    htmlContentKo = await renderMarkdown(contentKo);
   }
 
   return {
@@ -58,15 +66,13 @@ async function processLog(fileName) {
 
   const { data, content } = matter(fileContents);
 
-  const processedContent = await remark()
-    .use(html)
-    .process(content);
-  const htmlContent = processedContent.toString();
+  const htmlContent = await renderMarkdown(content);
 
   return {
     slug,
     title: data.title || '',
     date: data.date,
+    updatedAt: data.updatedAt || data.date,
     content: content,
     htmlContent: htmlContent,
   };
@@ -132,6 +138,7 @@ async function generateBlogData() {
       slug: log.slug,
       title: log.title,
       date: log.date,
+      updatedAt: log.updatedAt,
     })),
     fullLogs: fullLogs,
   };

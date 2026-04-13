@@ -9,6 +9,14 @@ export const metadata: Metadata = buildMetadata({
   path: "/logs",
 });
 
+function isRecent(dateStr: string): boolean {
+  const logDate = new Date(dateStr);
+  const now = new Date();
+  const diffMs = now.getTime() - logDate.getTime();
+  const diffDays = diffMs / (1000 * 60 * 60 * 24);
+  return diffDays <= 3 && diffDays >= 0;
+}
+
 export default function LogsIndex() {
   const logs = getAllLogs();
 
@@ -24,13 +32,16 @@ export default function LogsIndex() {
 
       <ul className="space-y-2">
         {logs.map((log) => (
-          <li key={log.slug} className="text-[15px]">
+          <li key={log.slug} className="text-[15px] flex items-center gap-2">
             <Link
               href={`/logs/${log.slug}`}
               className="underline hover:no-underline"
             >
               {log.date}
             </Link>
+            {isRecent(log.updatedAt ?? log.date) && (
+              <span className="w-2 h-2 rounded-full bg-blue-500" />
+            )}
           </li>
         ))}
       </ul>
