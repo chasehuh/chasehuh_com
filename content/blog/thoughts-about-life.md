@@ -7,88 +7,90 @@ author: "Chaewon Huh"
 
 ### Thoughts and Language Through Dimensions
 
-Thoughts contain more information than words. Even with the same language, 7 billion people have unique thoughts, and information loss occurs when converting thoughts to words. Therefore, thoughts are points in high-dimensional space, while words are points in low-dimensional space.
+Thoughts carry more information than words do. Even when people speak the same language, each of the seven billion people in the world thinks differently, and something is always lost when a thought is turned into words. In that sense, thoughts are points in a high-dimensional space, and words are points in a lower-dimensional one.
 
-The space where thoughts exist can be equated with the brain, so let's call it **brain-space**. The space where words exist is **language**. Every human has a unique brain-space. Therefore, for communication, we must project thoughts from our brain-space to another's brain-space.
+The space where thoughts exist can be identified with the brain, so I will call it **brain-space**. The space where words exist is **language**. Every person has a brain-space of their own. So when we communicate, what we are really doing is projecting what is in one brain-space into another.
 
-To project directly would require clearly defining the brain-space, but here's where the problem arises. Since human thinking occurs within brain-space, we cannot clearly define our own brain-space. Like a 2D ant on a plane cannot imagine 3D structures, defining one's own brain-space is impossible.
+But to project it directly, we would first have to define brain-space clearly. And that is where the problem begins. Human thought takes place inside brain-space, which means we cannot fully define our own brain-space from within it. A two-dimensional ant on a flat plane cannot imagine a three-dimensional structure. In much the same way, we cannot neatly define the space our own thinking lives in.
 
-To solve this, humans defined a socially agreed-upon low-dimensional space called 'language'. We project thoughts from brain-space to language space, and the recipient projects from language space back to their own brain-space. Information loss is inevitable, but it's the best solution humanity has found.
+To get around this, human beings created a low-dimensional space based on social agreement. That space is language. We project thoughts from brain-space into language-space, and the other person takes that point in language-space and projects it back into their own brain-space. Some loss of information is inevitable, but this is the best method we have found.
 
->Note: Even within the same language, there are dimensional differences between words like 'happiness' and 'cola'. Rather than defining it as one space, expressions like 'a network of subspaces' would be more accurate. However, since such expressions aren't intuitive, I'll continue using 'space'.
+>Note: Even within the same language, words like "cola" and "happiness" exist at different dimensional levels. "Cola" is relatively high-dimensional, because what people picture is fairly similar. "Happiness" is lower-dimensional, because countless different experiences are compressed into a single word, and each person imagines something different. Strictly speaking, it would be more accurate to describe this not as one single space, but as a network of subspaces. Still, "space" is simpler and more intuitive, so I will stick with that.
 
 ---
 
 ### What is Happiness?
 
-Rational humans design and act in life to maximize their 'life metric'. **Happiness is another expression of the 'life metric'.**
+Rational people design their lives and make their choices in ways that maximize their own **life metric**. Happiness is simply another way of referring to that life metric.
 
-Finding the answer to 'What is happiness?' means expressing the 'life metric (brain-space)' in lower-dimensional language than the word happiness itself.
+So to ask what happiness is means trying to express the life metric that exists in brain-space in language that is even lower-dimensional than the word happiness itself. There is a paradox here. The more concrete the expression becomes, the more personal it becomes. The more universal it becomes, the more abstract it becomes, and the more information is lost.
 
 ---
 
 ### The Illusion of a Correct Life - Thinking Outside the Box
 
-Living 20 years in Korean society, I fell into the illusion that a 'correct life' exists. Examples of what I perceived as a 'correct life':
+After spending twenty years in Korean society, I fell into the illusion that there was such a thing as a life close to the "correct answer." For example:
 
-- Getting into a good university, joining a major corporation, marrying in early 30s, having children in mid-30s
-- For POSTECH specifically: Starting research participation after 4th semester, choosing an appropriate lab for graduate school, then joining a corporation based on those achievements
+- Get into a good university, join a major company, marry in your early thirties, have children in your mid-thirties
+- Or, in the specific context of POSTECH: start doing research after your fourth semester, choose a decent lab, go to graduate school, and then get hired by a major company on the strength of that record
 
-However, not only is there no 'correct life', **there is no correct answer to life**. We know this fact yet live in the illusion that a correct answer exists.
+But not only is there no life that is "close to the correct answer" - **there is no correct answer to life at all.** We know this, and yet we go on living inside the illusion that such an answer exists.
 
-Where does the error occur? Is there really no correct answer to life?
+So where does the mistake occur? Is it really true that there is no correct answer to life?
 
-Saying a correct answer exists means there's a predetermined action plan that maximizes the 'life metric'. This assumes two things:
+To say there is a correct answer means that there is some fixed action plan that maximizes the life metric. That idea rests on two assumptions:
 
-1. **The life metric is predetermined**
-2. **There's a correct action plan to maximize that life metric**
+1. **The life metric itself is fixed in advance**
+2. **There is a correct action plan for maximizing it**
 
-The latter is hard to call wrong. It's a social conclusion based on millions of samples who lived with similar life metrics.
+The second assumption is not easy to dismiss. It is a social conclusion drawn from tens of millions of people who have lived with similar life metrics.
 
-**The error occurs in the first assumption - that the life metric is predetermined.**
+**The real error lies in the first assumption: that the life metric is already fixed.**
 
-Redefining 'life metric' or 'happiness': it's the direction our brain-space points toward. We have unique brain-spaces and unique 'life metrics'. Though the word 'happiness' may be the same in language dimension, it becomes unique in brain-space.
+If I were to redefine "life metric," or happiness, I would call it the direction a given brain-space is pointing toward. Each of us has a brain-space of our own, and each of us therefore has a life metric of our own. In language, the word happiness may be the same for everyone. But in brain-space, it becomes something unique to each person.
 
-Without clearly distinguishing language space from brain-space, it's easy to fall into illusion. Not only are they identical in language space, but the directions themselves are likely similar. Most humans' happiness increases with more money rather than less, with family rather than without.
+If we do not clearly distinguish language-space from brain-space, it is easy to fall into this illusion. The word is the same in language-space, and in many cases the directions themselves are similar too. For most people, happiness tends to be greater with more money than less, and greater with family than without.
 
-However, without escaping the illusion that life has a correct answer, we cannot truly enjoy life. From the moment we become adults, our choices approach infinity. But living in this illusion, we feel despair at a reality where we must conform while 99% of choices remain hidden.
+But if we never step outside the illusion that life has a correct answer, then we cannot truly enjoy living. The moment we become adults, the number of choices available to us comes close to infinity. And yet, if we stay inside this illusion, we end up grieving a reality in which we have no choice but to conform, while ninety-nine percent of the options remain hidden from sight.
 
-**We really can:**
-- Drop out of university and start a business
-- Become a YouTuber traveling the world
-- Run a shop on the other side of the Earth
+**In reality, we really can:**
+- Drop out of college and start a company
+- Become a YouTuber who travels the world
+- Open a shop on the other side of the planet
 
-To be clearer, this isn't arguing to live against society, but **to think independently**.
+To make myself clear, I am not arguing that we should live in opposition to society. I am arguing that we should **think for ourselves**.
 
-Since Big Brother doesn't exist in reality (I believe it doesn't), social conventions or 'correct lives' are structured to aim for members' happiness. Even thinking independently, the probability of reaching the same conclusion is significant.
+There is no Big Brother in real life. At least, I do not believe there is. Social conventions, and these supposedly correct lives, are still arranged in ways meant to aim at the happiness of the people inside them. So even if you think for yourself, there is still a good chance you will arrive at a similar conclusion.
 
-**However, the difference in independent thinking greatly affects life satisfaction.** There's a big difference in acceptance between a life I didn't choose and a life I couldn't choose. Life is precious and we only live once. So let's think independently, outside social frameworks.
+**But whether or not you arrived there through your own thinking makes a great difference in how satisfied you feel with your life.** There is a profound difference between a life I did not choose and a life I was never given the chance to choose. Life is precious, and we only live it once. So we should step outside the social frame and think on our own.
 
 ---
 
 ### What Kind of Life Do You Want?
 
-Once thinking outside the box, we must design our own lives. The universe has infinite scenarios and life is finite. Therefore, choosing the global optimum, the theoretically best choice, is impossible unless you're Doctor Strange. So we must make the best choice each moment - like an MDP.
+Once you begin thinking outside the frame, you have to design your own life. The universe contains infinitely many scenarios, while life is finite. So unless you are Doctor Strange, choosing the global optimum - the theoretically best possible choice - is impossible. All we can do is make the best choice available at each moment, something like an MDP.
 
-More experience is better, but at the moment of choice, we cannot add experience. Therefore, we can use two additional variables:
+The more experience you have, the better. But when the moment of choice arrives, you cannot suddenly add more experience. So there are two additional variables we can use.
 
 ##### 1. Others' Advice
 
-Though each brain-space differs, objective experiences and insights from others with similar directions are likely meaningful to me too. However, remembering that each brain-space is unique, subjective information should be viewed contemplatively.
+Even though every brain-space is different, objective experience, and the insights of people moving in a similar direction, are likely to be meaningful to me as well. But if we keep in mind that every brain-space is unique, then subjective information has to be taken in with some distance.
 
 *(This is why there are contradictions when listening to various entrepreneurs' lectures.)*
 
 ##### 2. 'How Cool Is It?'
 
-This might sound funny, but it's a conclusion I reached after considerable thought.
+This may sound a little funny, but it is the conclusion I came to after thinking about it for a long time.
 
-If we could confirm the correlation between my happiness and choices through others' experiences, that would be best. We could simply choose the option with the highest happiness delta.
+If I could confirm the correlation between my choices and my happiness through other people's experiences, that would be ideal. I could simply choose the option with the greatest increase in happiness.
 
-However, happiness isn't intuitive enough, and comparison becomes impossible between two similar-level choices. Then we need something intuitive yet high-dimensional that minimizes information loss from my 'life metric' in brain-space.
+But happiness is not intuitive enough, and when two options are at a similar level, comparison becomes almost impossible. So what I need is something intuitive, but still with enough dimensional richness that the loss of information from the life metric in my brain-space remains in balance.
 
-**I think that's 'coolness'.**
+**I think that thing is coolness.**
 
-This is an extremely subjective and intuitive metric. While the question "Whose life would be happier between Mark Zuckerberg and Obama?" requires deep consideration, "Who is cooler?" can be answered without difficulty.
+"Coolness" is more concrete than happiness, so I can judge it intuitively, and yet more abstract than any single lived experience, so it can still contain many different forms a life can take. It is a deeply subjective and intuitive metric.
+
+If you ask, "Whose life would be happier, Mark Zuckerberg's or Obama's?" I have to stop and think. If you ask, "Who is cooler?" I can answer without much difficulty.
 
 <!-- LANG:KO -->
 
