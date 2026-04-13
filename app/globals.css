@@ -137,8 +137,23 @@ ul {
 }
 
 .prose summary {
+  list-style: none;
   cursor: pointer;
   color: var(--muted-foreground);
+}
+
+.prose summary::-webkit-details-marker {
+  display: none;
+}
+
+.prose summary::before {
+  content: ">";
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.prose details[open] summary::before {
+  transform: rotate(90deg);
 }
 
 .prose details img {
