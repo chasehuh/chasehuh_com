@@ -32,12 +32,14 @@ export function buildMetadata({
   path = "/",
   type = "website",
   publishedTime,
+  modifiedTime,
 }: {
   title: string;
   description: string;
   path?: string;
   type?: "article" | "website";
   publishedTime?: string;
+  modifiedTime?: string;
 }): Metadata {
   const url = buildAbsoluteUrl(path);
 
@@ -63,6 +65,7 @@ export function buildMetadata({
         },
       ],
       ...(publishedTime ? { publishedTime } : {}),
+      ...(modifiedTime ? { modifiedTime } : {}),
     },
     twitter: {
       card: "summary_large_image",
