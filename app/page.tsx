@@ -16,6 +16,7 @@ export default function Index() {
     slug: l.slug,
     date: l.date,
     title: l.title,
+    updatedAt: l.updatedAt,
   }));
 
   const personJsonLd = {

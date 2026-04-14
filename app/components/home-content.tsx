@@ -12,6 +12,15 @@ interface LogSummary {
   slug: string;
   date: string;
   title: string;
+  updatedAt?: string;
+}
+
+function isRecent(dateStr: string): boolean {
+  const logDate = new Date(dateStr);
+  const now = new Date();
+  const diffMs = now.getTime() - logDate.getTime();
+  const diffDays = diffMs / (1000 * 60 * 60 * 24);
+  return diffDays <= 3 && diffDays >= 0;
 }
 
 export function HomeContent({
@@ -97,6 +106,9 @@ export function HomeContent({
                 >
                   {log.date}
                 </Link>
+                {isRecent(log.updatedAt ?? log.date) && (
+                  <span className="ml-2 inline-block w-2 h-2 rounded-full bg-blue-500 align-middle" />
+                )}
               </div>
             ))}
             <div className="text-[15px]" style={{ marginTop: "16px" }}>
