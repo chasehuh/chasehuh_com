@@ -36,7 +36,7 @@ export function HomeContent({
 
       <p className="text-[15px] leading-[1.8]">
         cofounder at{" "}
-        <a href="https://sume.so/about" className="underline hover:no-underline">
+        <a href="https://sume.com" className="underline hover:no-underline">
           sume
         </a>
       </p>
