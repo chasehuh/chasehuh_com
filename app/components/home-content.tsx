@@ -44,7 +44,7 @@ export function HomeContent({
       <p className="text-[15px] leading-[1.8] mb-8">
         contact me via{" "}
         <a
-          href="mailto:chase@sumelabs.com"
+          href="mailto:chase@sume.com"
           className="underline hover:no-underline"
         >
           email

@@ -29,7 +29,7 @@ export default function Index() {
     sameAs: [
       "https://github.com/chasehuh",
       "https://x.com/chaewonhuh_me",
-      "https://sumelabs.com",
+      "https://sume.com",
     ],
   };
 

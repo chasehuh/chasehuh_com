@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { siteUrl } from "~/lib/site";
 
 export const siteName = "Chaewon (Chase) Huh";
-export const siteDescription = "building sumelabs.com";
+export const siteDescription = "building sume.com";
 export const siteAuthor = "Chaewon Huh";
 export const siteLocale = "en_US";
 export const xHandle = "@chaewonhuh_me";
